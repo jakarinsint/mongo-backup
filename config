@@ -1,0 +1,12 @@
+# BAckup path is a must
+DB_BACKUP_PATH=./backup
+
+# MongoDb connection string
+MONGO_URI=mongodb://hph2:mimo@172.31.4.93:24816/hph_prod_dump
+
+# Set COLLECTION name for backup
+COLLECTION_NAME=surveys
+
+# Set mark timestamp, script shall backup all documents from beginning to mark timestamp
+# *make sure to use created column!
+MARK_TIMESTAMP=2020-01-05T00:00:02.890+00:00
